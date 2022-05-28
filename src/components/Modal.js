@@ -20,7 +20,6 @@ const style = {
 };
 
 function Modal({ content, open, handleClose }) {
-    console.log(content)
 
     return (
         content && <MuiModal
