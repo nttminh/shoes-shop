@@ -49,14 +49,18 @@ function Modal({ content, open, handleClose }) {
                             />
                         </Grid>
                         <Grid item xs={6}>
-                            <Typography id="transition-modal-title" variant="h5" component="h2">
+                            <Typography id="transition-modal-title" variant="h4" component="h2">
                                 {content && content.name}
                             </Typography>
-                            <Typography id="transition-modal-description" sx={{ mt: 2 }}>
+                            <Typography id="transition-modal-description" sx={{ my: 2 }}>
                                 {content && content.description}
+                                {content && content.shortDescription}
                             </Typography>
-                            <Typography variant="p">
+                            <Typography variant="h6">
                                 {content && `Price: $${content.price}`}
+                            </Typography>
+                            <Typography variant="h6">
+                                {content && `Quantity left: ${content.quantity}`}
                             </Typography>
                         </Grid>
                     </Grid>
