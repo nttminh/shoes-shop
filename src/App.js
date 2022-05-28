@@ -1,23 +1,17 @@
 import logo from './logo.svg';
 import './App.css';
+import ShoesStore from './components/ShoesStore';
+import { Button, Container } from '@mui/material';
+import ProductItem from './components/ProductItem';
+import { useState } from 'react';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Container>
+        <h1 className='site-header' align='center'>Shoes Store</h1>
+        <ShoesStore />
+      </Container>
     </div>
   );
 }
